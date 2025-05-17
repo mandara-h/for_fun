@@ -1,4 +1,4 @@
-# Monte Carlo Estimation of pi
+# Monte Carlo Estimation of $\pi$
 
 This project uses the Monte Carlo method to estimate the value of $\pi$ by simulating random points inside a square and checking how many fall inside a circle of unit radius.
 
@@ -19,7 +19,7 @@ $$\pi \approx 4 \times \frac{\text{Points inside circle}}{\text{Total points}}$$
 1. Generate `N` random points inside a square with sides from -1 to 1.
 2. Check whether each point lies inside the unit circle (i.e. $x^2 + y^2 \leq 1$).
 3. Count how many points fall inside.
-4. Estimate pi using:
+4. Estimate $\pi$ using:
 
 ```python
 pi_estimate = 4 * (inside_circle / total_points)
@@ -27,4 +27,4 @@ pi_estimate = 4 * (inside_circle / total_points)
 
 # Convergence Plot
 
-Additionally, for any given value of N, a convergence plot can be generated. With each newly generated sample pi is freshly estimated, until N sample points are collected. This shows that the pi estimation progressively improves as the number of sample points considered increases.
+Additionally, for any given value of N, a convergence plot can be generated. With each newly generated sample $\pi$ is freshly estimated, until N sample points are collected. This shows that the $\pi$ estimation progressively improves as the number of sample points considered increases.
