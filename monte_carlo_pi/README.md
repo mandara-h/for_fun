@@ -1,15 +1,15 @@
 # Monte Carlo Estimation of pi
 
-This project uses the Monte Carlo method to estimate the value of pi by simulating random points inside a square and checking how many fall inside a circle of unit radius.
+This project uses the Monte Carlo method to estimate the value of $\pi$ by simulating random points inside a square and checking how many fall inside a circle of unit radius.
 
 # What is Monte Carlo Estimation?
 
-Monte Carlo methods use randomness and statistical sampling to estimate mathematical results. In this case, we approximate pi using random points inside a square:
+Monte Carlo methods use randomness and statistical sampling to estimate mathematical results. In this case, we approximate $\pi$ using random points inside a square:
 
 1. A unit circle of radius 1 fits inside a square of side length 2.
-2. Area of the circle is pi(r)(r) = pi.
-3. Area of the square is (2)(2) = 4.
-4. The ratio of the area of the circle to the square is pi/4.
+2. Area of the circle is $\pi \times r \times r = pi$.
+3. Area of the square is $2 \times 2 = 4$.
+4. The ratio of the area of the circle to the square is $\pi/4$.
 5. By randomly sampling points and checking whether they fall inside the circle, we can estimate pi as follows:
 
 $$\pi \approx 4 \times \frac{\text{Points inside circle}}{\text{Total points}}$$
@@ -23,6 +23,7 @@ $$\pi \approx 4 \times \frac{\text{Points inside circle}}{\text{Total points}}$$
 
 ```python
 pi_estimate = 4 * (inside_circle / total_points)
+```
 
 # Convergence Plot
 
